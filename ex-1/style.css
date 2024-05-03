@@ -7,8 +7,7 @@
 }
 
 .container {
-  width: 1420px;
-  height: 736px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,18 +18,18 @@
 .title {
   font-weight: bold;
   font-size: 2rem;
-  width: 25%;
+  width: 250px;
   text-align: center;
 }
 
 .card-container {
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 20px;
-  padding: 20px;
+  padding: 2%;
   flex-wrap: wrap;
 }
 
@@ -58,7 +57,7 @@
 }
 
 i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: hsla(20, 100%, 64%, 1);
 }
 
@@ -124,4 +123,11 @@ i {
   position: absolute;
   bottom: 40%;
   right: 20%;
+}
+
+/* responsive */
+@media only screen and (width <= 600px) {
+  .card-container {
+    flex-direction: column;
+  }
 }
