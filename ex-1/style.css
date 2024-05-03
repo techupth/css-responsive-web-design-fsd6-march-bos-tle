@@ -1,1 +1,52 @@
-/* Start coding here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 40px;
+    text-align: center;
+}
+.bigbox{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.boxu {
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    margin: 20px;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.boxd{
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    margin: 20px;
+    font-size: rem;
+    color: white;
+    text-align: center;
+}
+.tab1{
+    display: flex;
+    flex-direction: row;
+}
+.tab2 {
+display: flex;
+flex-direction: row;
+}
+@media only screen and (max-width: 768px){
+    .bigbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .tab1,.tab2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
