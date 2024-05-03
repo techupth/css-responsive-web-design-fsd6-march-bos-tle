@@ -1,1 +1,117 @@
-/* Start coding here */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+  --theme-primary-color:#fb8444;
+  --theme-secondary-color:#fbbc9c;
+  --font-primary-color: #38556b;
+  --font-secondary-color:#99a7b3;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.main-page{
+  padding: 1% 10%;
+  height: 100vh;
+  width: 100vw;
+}
+.heading-text{
+  width: 100%;
+  height: 10%;
+}
+h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
+span{
+  background: linear-gradient(
+    to bottom,
+    rgba(225,225,225,0) 40%,
+    var(--theme-primary-color) 40% 77%,
+    rgba(225,225,225,0) 77%
+    );
+}
+.box-container{
+  height: 90%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.box-row-top,.box-row-bottom{
+  width: 100%;
+  gap: 15px;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  width: 25%;
+  height: 100%;
+  min-width: 164px;
+  border-radius: 5px;
+  color: var(--font-primary-color);
+  padding: 5px 5px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+}
+.top{
+  position: absolute;
+  padding: 10px;
+  top: 10px;
+  left: 20px;
+  background-color: var(--theme-secondary-color);
+  border-radius: 50%;
+  color: var(--theme-primary-color);
+}
+.fa-arrow-right{
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+h3{
+  font-size: 80%;
+}
+p{
+  font-size: 70%;
+}
+.endbox{
+  justify-content: center;
+  background-color: var(--theme-primary-color);
+  color: white;
+}
+.Endarrow{
+
+}
+@media only screen and (max-width: 600px){
+  .box-row-top,.box-row-bottom{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+  }
+  .box-container{
+    height: 100vh;
+  }
+  .box{
+    width: 50%;
+    height: 187px;
+  }
+}
