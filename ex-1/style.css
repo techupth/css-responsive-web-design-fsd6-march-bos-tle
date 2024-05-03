@@ -1,1 +1,127 @@
-/* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  width: 1420px;
+  height: 736px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  width: 25%;
+  text-align: center;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* card */
+.card {
+  width: 330px;
+  height: 268px;
+  border-radius: 8px;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 218, 200);
+  border-radius: 100%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  font-size: 1.5rem;
+  color: hsla(20, 100%, 64%, 1);
+}
+
+.fa-arrow-right {
+  color: hsla(206, 56%, 22%, 1);
+}
+
+/* hover effect */
+.card:hover {
+  background-color: rgb(228, 228, 228);
+  .card-icon {
+    background-color: hsla(20, 100%, 64%, 1);
+  }
+  .card-icon i {
+    color: white;
+  }
+}
+
+.card-title {
+  color: hsla(206, 56%, 22%, 1);
+  font-weight: bold;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+}
+
+.card-detail {
+  color: hsla(207, 19%, 44%, 1);
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.card-arrow {
+  color: hsla(206, 56%, 22%, 1);
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+/* last card */
+.card:last-child {
+  background-color: hsla(20, 100%, 64%, 1);
+}
+
+.last-card-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  position: absolute;
+  width: 80px;
+  top: 30%;
+  left: 10%;
+}
+
+.last-card-arrow {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 40%;
+  right: 20%;
+}
